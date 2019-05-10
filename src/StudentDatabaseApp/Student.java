@@ -71,5 +71,12 @@ public class Student {
     }
 
     //show status
-
+    @Override
+    public String toString(){
+        return "Name: " + this.firstName + " " + this.lastName
+                + "\nStudent Id: " + this.studentId
+                + "\nGrade Level: " + this.gradeYear
+                + "\nCourses Enrolled: " + this.courses
+                + "\nBalance: $" + tuitionBalance;
+    }
 }
